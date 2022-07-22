@@ -33,6 +33,8 @@ import getCore from 'cvat-core-wrapper';
 import consts from 'consts';
 
 import { CVATLogo } from 'icons';
+//my addition
+import { AFRICAILogo } from 'icons';
 import ChangePasswordDialog from 'components/change-password-modal/change-password-modal';
 import CVATTooltip from 'components/common/cvat-tooltip';
 import { switchSettingsDialog as switchSettingsDialogAction } from 'actions/settings-actions';
@@ -380,7 +382,7 @@ function HeaderContainer(props: Props): JSX.Element {
     return (
         <Layout.Header className='cvat-header'>
             <div className='cvat-left-header'>
-                <Icon className='cvat-logo-icon' component={CVATLogo} />
+                <Icon className='cvat-logo-icon' component={AFRICAILogo} />
                 <Button
                     className={getButtonClassName('projects')}
                     type='link'

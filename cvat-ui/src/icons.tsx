@@ -52,6 +52,9 @@ import SVGCVATS3Provider from './assets/S3.svg';
 import SVGCVATGoogleCloudProvider from './assets/google-cloud.svg';
 import SVGOpenVINO from './assets/openvino.svg';
 
+import SVGAFRICAILogo from './assets/africailogo.svg';
+export const AFRICAILogo = React.memo((): JSX.Element => <SVGAFRICAILogo />);
+
 export const CVATLogo = React.memo((): JSX.Element => <SVGCVATLogo />);
 export const CursorIcon = React.memo((): JSX.Element => <SVGCursorIcon />);
 export const MoveIcon = React.memo((): JSX.Element => <SVGMoveIcon />);
