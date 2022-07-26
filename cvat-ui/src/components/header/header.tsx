@@ -166,6 +166,7 @@ function HeaderContainer(props: Props): JSX.Element {
 
     const {
         CHANGELOG_URL, LICENSE_URL, GITTER_URL, FORUM_URL, GITHUB_URL, GUIDE_URL,
+        MYGITHUB_URL
     } = consts;
 
     const history = useHistory();
@@ -468,12 +469,14 @@ function HeaderContainer(props: Props): JSX.Element {
                         size='large'
                         className='cvat-header-button'
                         type='link'
-                        href={GITHUB_URL}
+                        //href={GITHUB_URL}
+                        href={MYGITHUB_URL}
                         onClick={(event: React.MouseEvent): void => {
                             event.preventDefault();
                             // false alarm
                             // eslint-disable-next-line security/detect-non-literal-fs-filename
-                            window.open(GITHUB_URL, '_blank');
+                            //window.open(GITHUB_URL, '_blank');
+                            window.open(MYGITHUB_URL, '_blank');
                         }}
                     />
                 </CVATTooltip>
